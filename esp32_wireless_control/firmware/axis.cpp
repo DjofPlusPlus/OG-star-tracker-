@@ -114,7 +114,9 @@ void Axis::resetAxisCount()
 
 void Axis::setDirection(bool directionArg)
 {
-    digitalWrite(dirPin, directionArg ^ invertDirectionPin);
+    bool direction = directionArg ^ invertDirectionPin;
+    digitalWrite(INTERV_PIN, direction);
+    digitalWrite(dirPin, direction);
 }
 
 void Axis::setMicrostep(uint8_t microstep)

@@ -34,7 +34,7 @@
 #endif
 // If you are using AP mode, you can access the website using the below URL
 #ifndef WEBSITE_NAME
-#define WEBSITE_NAME "www.tracker.com"
+#define WEBSITE_NAME "og.tracker"
 #endif
 #ifndef DNS_PORT
 #define DNS_PORT 53
